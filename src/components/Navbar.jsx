@@ -1,23 +1,25 @@
+import Logo from "../assets/Sergellogo.png";
 
 function Navbar() {
 
 
   return (
     <nav>
-      <div className="container  flex  justify-evenly bg-[#f78da7] bg-opacity-10  mx-auto ">
-        <div className="flex  gap-10">
-          <a href=' ' className="uppercase text-gray-500 font-bold py-5 hover:text-indigo-950"> Professional Site </a>
-          <a href=' ' className="uppercase text-gray-500 font-bold py-5 hover:text-indigo-950">Patient Site </a>
+      <div className="container  md:flex  md:justify-evenly bg-blue-300 bg-opacity-10  mx-auto ">
+        <div className="md:flex  md:gap-10 pt-3">
+          <a href=' ' className="uppercase text-gray-500 font-bold my-4 py-1 hover:text-indigo-950 hover:border-y hover:border-blue-600 hover:border-shadow-2xl"> Professional Site 
+          </a>
+          <a href=' ' className="uppercase text-gray-500 font-bold my-4 py-1 hover:text-indigo-950 hover:border-y hover:border-blue-600 hover:border-shadow-2xl">Patient Site </a>
           
         </div>
 
-        <div>
-          <img src='src\assets\logo.svg' className="w-[120px] py-5 opacity-90"/>
-        </div>
+        <a href="/">
+          <img src={Logo}  className="w-[200px] py-4 opacity-90"/>
+        </a>
 
-        <div className="flex  gap-10">
-          <a href=' ' className="uppercase text-gray-500 font-bold py-5 hover:text-indigo-950">Medication </a>
-          <a href=' ' className="uppercase text-gray-500 font-bold py-5 hover:text-indigo-950">prescribing Information </a>
+        <div className="md:flex  md:gap-10 pt-3">
+          <a href=' ' className="uppercase text-gray-500 font-bold my-4 py-1 hover:text-indigo-950 hover:border-y hover:border-blue-600 hover:border-shadow-2xl">Medication </a>
+          <a href=' ' className="uppercase text-gray-500 font-bold my-4 py-1 hover:text-indigo-950 hover:border-y hover:border-blue-600 hover:border-shadow-2xl">prescribing Information </a>
         </div>
 
       </div>   
